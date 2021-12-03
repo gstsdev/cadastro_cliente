@@ -2,6 +2,9 @@
 
 
 $nomeCliente = $_GET["nome"];
+$cpfCliente = $_GET["cpf"];
+$telefoneCliente = $_GET["fone"];
+$emailCliente = $_GET["email"];
 
 ?>
 <!DOCTYPE html>
@@ -17,6 +20,18 @@ $nomeCliente = $_GET["nome"];
         <tr>
             <td>Nome Completo</td>
             <td><?php echo $nomeCliente; ?></td>
+        </tr>
+        <tr>
+            <td>CPF</td>
+            <td><?php echo $cpfCliente; ?></td>
+        </tr>
+        <tr>
+            <td>Telefone</td>
+            <td><?php echo $telefoneCliente; ?></td>
+        </tr>
+        <tr>
+            <td>E-mail</td>
+            <td><?php echo $emailCliente; ?></td>
         </tr>
     </table>
 </body>
